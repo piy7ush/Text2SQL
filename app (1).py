@@ -58,7 +58,7 @@ except ImportError:
 BASE_DIR = Path(__file__).resolve().parent
 
 USE_REMOTE_LLM = os.getenv("USE_REMOTE_LLM", "").lower() in {"1", "true", "yes"}
-BASE_URL = os.getenv("GENAI_BASE_URL", "https://genailab.tcs.in")
+BASE_URL = os.getenv("GENAI_BASE_URL", "https://genailab.in")
 API_KEY = os.getenv("GENAI_API_KEY", "")
 
 SCHEMA_FILE = BASE_DIR / "RAG_DOC.xlsx"
